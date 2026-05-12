@@ -1,0 +1,129 @@
+solid three_axis_system
+
+// --------------------
+// X Axis (Financial)
+// --------------------
+facet normal 0 0 0
+ outer loop
+  vertex -50 -1 -1
+  vertex 50 -1 -1
+  vertex 50 1 -1
+ endloop
+endfacet
+facet normal 0 0 0
+ outer loop
+  vertex -50 -1 -1
+  vertex 50 1 -1
+  vertex -50 1 -1
+ endloop
+endfacet
+
+// --------------------
+// Y Axis (Environmental)
+// --------------------
+facet normal 0 0 0
+ outer loop
+  vertex -1 -50 -1
+  vertex 1 -50 -1
+  vertex 1 50 -1
+ endloop
+endfacet
+facet normal 0 0 0
+ outer loop
+  vertex -1 -50 -1
+  vertex 1 50 -1
+  vertex -1 50 -1
+ endloop
+endfacet
+
+// --------------------
+// Z Axis (Benefits)
+// --------------------
+facet normal 0 0 0
+ outer loop
+  vertex -1 -1 -50
+  vertex 1 -1 -50
+  vertex 1 -1 50
+ endloop
+endfacet
+facet normal 0 0 0
+ outer loop
+  vertex -1 -1 -50
+  vertex 1 -1 50
+  vertex -1 -1 50
+ endloop
+endfacet
+
+// =======================================================
+// Floating Solar Hydrogen Data Centers
+// (High Profit, High Regeneration, High Collective)
+// Positioned at +40,+40,+40
+// =======================================================
+
+facet normal 0 0 1
+ outer loop
+  vertex 35 35 45
+  vertex 45 35 45
+  vertex 45 45 45
+ endloop
+endfacet
+facet normal 0 0 1
+ outer loop
+  vertex 35 35 45
+  vertex 45 45 45
+  vertex 35 45 45
+ endloop
+endfacet
+
+facet normal 0 0 -1
+ outer loop
+  vertex 35 35 35
+  vertex 45 45 35
+  vertex 45 35 35
+ endloop
+endfacet
+facet normal 0 0 -1
+ outer loop
+  vertex 35 35 35
+  vertex 35 45 35
+  vertex 45 45 35
+ endloop
+endfacet
+
+// =======================================================
+// Space-based Data Centers
+// (Low Profit, Low Regeneration, Low Collective)
+// Positioned at -40,-40,-40
+// =======================================================
+
+facet normal 0 0 1
+ outer loop
+  vertex -45 -45 -35
+  vertex -35 -45 -35
+  vertex -35 -35 -35
+ endloop
+endfacet
+facet normal 0 0 1
+ outer loop
+  vertex -45 -45 -35
+  vertex -35 -35 -35
+  vertex -45 -35 -35
+ endloop
+endfacet
+
+facet normal 0 0 -1
+ outer loop
+  vertex -45 -45 -45
+  vertex -35 -35 -45
+  vertex -35 -45 -45
+ endloop
+endfacet
+facet normal 0 0 -1
+ outer loop
+  vertex -45 -45 -45
+  vertex -45 -35 -45
+  vertex -35 -35 -45
+ endloop
+endfacet
+
+endsolid three_axis_system
