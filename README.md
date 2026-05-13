@@ -6,7 +6,6 @@
   License: CERN-OHL-S v2 (hardware) · See LICENSE
   Format : GitHub Flavored Markdown (GFM) — https://github.github.com/gfm/
 -->
-
 <div align="center">
 
 ### Electricity · Fresh water · Hydrogen · Oxygen · Food · Computation · Connectivity — as a public-interest infrastructure
@@ -19,18 +18,24 @@
 
 <sub>An open-hardware proposal for integrated coastal civic infrastructure.</sub>
 
+![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/a392e4abcd5ba0cd16a29ea8656de25545701eb9/Image/Floating%20Solar%20Hydrogen%20Data%20Center%20Main.jpg)
+
 </div>
 
 ---
-
-> [!IMPORTANT]
-> **Why this repository is structured the way it is.**
-> Most hardware repositories document only the technology. This one documents **hardware, software, operations, business, governance, and intellectual property as parts of a single design**. For an integrated infrastructure that touches energy, water, food, computation, and connectivity, the ownership model and the licensing model influence outcomes alongside the engineering. The governance and IP sections are intended to be read with the same care as the technical sections.
 
 <a id="at-a-glance"></a>
 ## :eyes: At a glance
 
 The Floating Solar Hydrogen Data Center is a coastal infrastructure platform that combines floating photovoltaics, green hydrogen, low-pressure hydrogen storage, low-energy desalination, ocean-cooled computation, and offshore 5G/6G into one interdependent system. The design intent is that subsystems reinforce one another and that the resulting services be available as public-interest utilities.
+
+---
+
+> [!IMPORTANT]
+> **Why this repository is structured the way it is?**
+> Most hardware repositories document only the technology. This one documents **hardware, software, operations, business, governance, and intellectual property as parts of a single design**. For an integrated infrastructure that touches energy, water, food, computation, and connectivity, the ownership model and the licensing model influence outcomes alongside the engineering. The governance and IP sections are intended to be read with the same care as the technical sections.
+
+---
 
 **Suggested entry points by reader:**
 
@@ -54,15 +59,14 @@ The Floating Solar Hydrogen Data Center is a coastal infrastructure platform tha
 2. [Designing from First Principles](#2-designing-from-first-principles)
 3. [Applications and Impact](#3-applications-and-impact)
 4. [Past Prototypes](#4-past-prototypes)
-5. [Speculative Design for International Development](#5-speculative-design-for-international-development)
-6. [Engineering Futures — and the Bridge to Impact Innovation](#6-engineering-futures--and-the-bridge-to-impact-innovation)
-7. [Hypothetical Unit: The 10 kW Single-House Reference](#7-hypothetical-unit-the-10-kw-single-house-reference)
-8. [Scalability](#8-scalability)
-9. [Ownership & Governance](#9-ownership--governance)
-10. [Business Case](#10-business-case)
-11. [Reporting — A Theory of Change](#11-reporting--a-theory-of-change)
-12. [Intellectual Property and the Energy Transition](#12-intellectual-property-and-the-energy-transition)
-13. [Collaboration Framework](#13-collaboration-framework)
+5. [Engineering Futures — and the Bridge to Impact Innovation](#5-engineering-futures--Bridging-Fiction-and-Science)
+6. [Hypothetical Unit: The 10 kW Single-House Reference](#6-hypothetical-unit-the-10-kw-single-house-reference)
+7. [Scalability](#8-scalability)
+8. [Ownership & Governance](#9-ownership--governance)
+9. [Business Case](#10-business-case)
+10. [Reporting — A Theory of Change](#11-reporting--a-theory-of-change)
+11. [Intellectual Property and the Energy Transition](#12-intellectual-property-and-the-energy-transition)
+12. [Collaboration Framework](#13-collaboration-framework)
 
 **Supplementary sections** *(for engineers, financiers, policymakers, and governments)*:
 
@@ -89,32 +93,26 @@ The Floating Solar Hydrogen Data Center is a coastal infrastructure platform tha
 
 ### 1.1 The technology, in one diagram
 
-![Floating Solar Hydrogen Data Center — system overview](./diagrams/system-overview.svg)
+![Sequence-Diagram](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/4de1138a6f2d36f650bf15da1fe27ca908951642/Image/Convergence.png)
 
 A single floating platform integrates six emerging technologies that have, to date, mostly been developed in isolation: floating photovoltaics, green hydrogen via electrolysis, low‑pressure hydrogen storage, low‑energy desalination, ocean‑cooled data computation, and offshore 5G/6G connectivity.
 
 ### 1.2 An integration of established and emerging technologies
 
-The underlying components are individually well known. What is new is the deliberate *coupling*: floating solar's waste heat is moderated by water; the desalination byproduct (oxygen) can be released into the local water column; the data center's heat can pre-heat the brine stream; and hydrogen storage acts as the energy buffer that allows continuous service through low-sun periods and disruptions.
+The underlying components are individually well known. What is new is the **coupling**: the floating solar panels are cooled by proximity to water; the desalination can be done mainly by distillation; the electrolysis of freshwater can produce hydrogen as energy storage at low pressure; the data center can be cooled with seawater; the floating solar panels offer shading and cooling; oxygen can be injected underwater to improve marine habitat;  calcium-based marine life can sequester carbon; the overall floating platform can become a biodiverse habitat. 
 
 ### 1.3 Sequence of services
+![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/296c9a18ea1eabe12d73e3dbeecb18294850c7d6/Image/Sequence%20Render.png)
 
 ```mermaid
 flowchart LR
-    A[Solar PV<br/>on floats] --> B[Electricity]
-    B --> C[Seawater<br/>desalination]
-    C --> D[Purified<br/>water]
-    D --> E[PEM / Alkaline<br/>electrolysis]
-    E --> F[H2<br/>low-pressure<br/>storage]
-    E --> G[O2 released<br/>sub-surface]
-    F --> H[Data center<br/>seawater-cooled]
-    F --> I[Energy backup]
-    H --> J[Offshore 5G/6G<br/>broadcast to shore]
-    G --> K[Mollusc and<br/>aquaculture beds]
-    K --> L[Carbon sequestration<br/>+ food + biodiversity]
+    A[Solar] --> B[Desalination <br/> Electrolysis]
+    B --> C[Hydrogen storage]
+    C --> D[Fuel Cell]
+    D --> E[Data Center]
+    E --> F[Wireless Comms]
+    F --> G[Marine Food <br/> Processing]
 ```
-
-The data produced by the data center is broadcast to mobile networks; the oxygen produced by electrolysis is released below the waterline, which may improve local water quality; and beneath the plant, mollusc beds (oysters, mussels, and other filter-feeders) can sequester carbon, clean the water column, and provide habitat. The platform is designed to contribute to its host ecosystem rather than to extract from it.
 
 ---
 
@@ -126,7 +124,8 @@ The data produced by the data center is broadcast to mobile networks; the oxygen
 | **Solar** | Photovoltaic generation is currently the lowest-cost source of new electricity in many markets. Starting from a low-cost input keeps downstream services affordable. |
 | **Floating** | Land is a significant cost of ground-mounted solar. Marine surfaces are abundant near most population centres (about half of the world's population lives within 200 km of a coast). |
 | **Hydrogen** | Among current energy-storage chemistries, hydrogen requires no lithium, nickel, cobalt, cadmium, copper, lead, graphite, or manganese — only a small amount of platinum for the catalyst. When consumed, it returns to water vapour. |
-| **Data center** | Demand for computation, particularly for AI workloads, is growing rapidly and is increasingly constrained by access to energy, water, and cooling. Co-locating computation with abundant low-carbon energy reduces these constraints. |
+| **Data center** | Demand for computation, particularly for soverign AI, is growing rapidly and is increasingly constrained by access to energy and freshwater. |
+| **Oxygen** | Many coastal areas are experiencing overheating and low oxygen levels. By adding oxygen and providing shading, we may improve marine habitat and sequester carbon.  |
 
 > Each principle was selected because it independently lowers cost, lowers environmental impact, or lowers dependence on constrained supply chains. Combining them compounds the effect.
 
@@ -137,7 +136,7 @@ The data produced by the data center is broadcast to mobile networks; the oxygen
 
 ### 3.1 Services delivered to the host community
 
-- **Electricity production** — continuous, via solar plus hydrogen buffering
+- **Electricity production** — combining solar and hydrogen buffering for continuous service 
 - **Fresh water production** — desalinated from local seawater
 - **Brine production** — feedstock for chemistry, salt harvest, mineral recovery
 - **Hydrogen production** — clean storage medium and industrial feedstock
@@ -149,22 +148,28 @@ The data produced by the data center is broadcast to mobile networks; the oxygen
 ### 3.2 Byproducts (intentional, beneficial)
 
 - Dissolved **O₂** added to the local water column
-- **Shading, heating and cooling** of the surface layer beneath the panels
+- **Shading and cooling** of the surface layer beneath the panels
 - **Biomass production** from aquaculture nested under the floats
 - **Carbon sequestration** through mollusc beds and biogenic carbonate
 
 ### 3.3 Impact axes
 
-```
-            ▲ Y: Environmental impact (regenerative ↔ degenerative)
-            │
-            │      ● target ← services delivered AND ecosystem improved
-            │   ╱
-            │ ╱
-   ─────────┼──────────► X: Productivity / economic return
-            │
-            │
-            ▼
+```mermaid
+%%{init: {
+  "themeVariables": {
+    "quadrant1Fill": "#d9ead3",
+    "quadrant2Fill": "#fff2cc",
+    "quadrant3Fill": "#f4cccc",
+    "quadrant4Fill": "#c9daf8"
+  }
+}}%%
+
+quadrantChart
+    title Environmental Impact VS Profit
+    x-axis Environmental Degradation --> Environmental Regeneration
+    y-axis Private Profit --> Collective Benefit
+    Floating Solar Hydrogen Data Center: [0.75, 0.75] radius: 25, color: #00ff33
+    Space Based data Center: [0.25, 0.25] radius: 25, color: #ff3300
 ```
 
 The design target is the upper-right quadrant: economically sustainable operations combined with measurable environmental benefit. This dual objective is what the rest of the document is structured to support.
@@ -178,73 +183,50 @@ A six-step trajectory from a small classroom kit to a fully instrumented test ri
 
 | Image | Year · Place · Name | Description |
 | :---: | --- | --- |
-| ![2021 Aug — Solar Hydrogen Science Kit](./prototypes/2021-08_HK_solar-hydrogen-science-kit/cover.jpg) | **a. 2021 Aug · Hong Kong** <br/>*"Solar Hydrogen Science Kit"* | An off-the-shelf classroom kit (Horizon Education) using a polysilicon mini-panel and a reversible PEM electrolyzer / fuel cell. Used to validate the physics of the closed loop and to teach it. |
-| ![2021 Sep — Ocean Imagineer](./prototypes/2021-09_HK_ocean-imagineer/cover.jpg) | **b. 2021 Sep · Hong Kong** <br/>*"Ocean Imagineer"* | A floating oyster hatchery powered by solar panels, with low-pressure hydrogen as auxiliary storage. Deployed in North Point waters and Lau Fau Shan oyster farm. Decorated by textile artist Kay Wong; biology supervised by Prof. Vengatesen Thiyagarajan (HKU); supported by The Nature Conservancy, MakerBay, NEAR Foundation, Seeed Studio, and the Hong Kong Arts Centre. |
-| ![2022 Nov — Balon Balon Ijo](./prototypes/2022-11_ID_balon-balon-ijo/cover.jpg) | **c. 2022 Nov · Indonesia** <br/>*"Balon Balon Ijo"* | A functional demonstration that modular floating solar-hydrogen devices can be operated locally, producing low-pressure hydrogen in flexible tanks for electricity, cooking gas, and pressurized mobility. Presented at FabFest; "Special Mention" award reviewed by MIT Prof. Neil Gershenfeld. |
-| ![2023 Dec — Floating Solar Hydrogen Research Facility Proposal](./prototypes/2023-12_ID_research-facility-proposal/cover.jpg) | **d. 2023 Dec · Indonesia** <br/>*"Floating Solar Hydrogen Research Facility Proposal"* | A research-facility proposal for the mangroves of North Serangan Island, Denpasar, Bali. IoT and real-time dashboard prototyped with Eric Pan (Seeed Studio). Contributions from Prof. Ni Made Dwidiani, Prof. Alvaro Cassinelli, Pamela Pascual. |
-| ![2024 Mar — International Ocean Station Philippines](./prototypes/2024-03_PH_international-ocean-station/cover.jpg) | **e. 2024 Mar · Philippines** <br/>*"International_Ocean_Station_Philippines"* | An architectural model of floating villages co-designed with approximately 100 participants from ten NGOs. The concept reframes the gaze of the International Space Station: instead of looking at Earth from above, coastal communities study and steward their local ocean. Acquired by the MIND Museum in Manila; supported by Alliance Française Manila; produced by Emerging Islands. |
-| ![2024 Sep — Floating Solar Hydrogen](./prototypes/2024-09_SG_floating-solar-hydrogen/cover.jpg) | **f. 2024 Sep · Singapore** <br/>*"Floating Solar Hydrogen"* | A fully instrumented test device for *An Ocean City Imagined* at the ArtScience Museum. Custom floating chassis, custom PCB, sensor stack measuring every sub-system; tested in lab, on land, and on water. Supported by Saad Chinoy, Doruk Tan Ozturk, Li Congxiao, Mitalee Parikh, Kaitlyn Tan, Constance Gaume, ArtScience Museum, Huey Lin & Frederic Gaume, the Singapore Institute of Technology, and Conservatoire National des Arts et Métiers Paris. |
+| ![2021 Aug — Solar Hydrogen Science Kit](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Solar%20Hydrogen%20Science%20Kit.png) | **a. 2021 Aug · Hong Kong** <br/>*"Solar Hydrogen Science Kit"* | An off-the-shelf classroom kit (Horizon Education) using a polysilicon mini-panel and a reversible PEM electrolyzer / fuel cell. Used to validate the physics of the closed loop and to teach it. |
+| ![2021 Sep — Ocean Imagineer](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Ocean%20Imagineer.png) | **b. 2021 Sep · Hong Kong** <br/>*"Ocean Imagineer"* | A floating oyster hatchery powered by solar panels, with low-pressure hydrogen as auxiliary storage. Deployed in North Point waters and Lau Fau Shan oyster farm. Decorated by textile artist Kay Wong; biology supervised by Prof. Vengatesen Thiyagarajan (HKU); supported by The Nature Conservancy, MakerBay, NEAR Foundation, Seeed Studio, and the Hong Kong Arts Centre. |
+| ![2022 Nov — Balon Balon Ijo](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Balon%20Balon%20Ijo.png) | **c. 2022 Nov · Indonesia** <br/>*"Balon Balon Ijo"* | A functional demonstration that modular floating solar-hydrogen devices can be operated locally, producing low-pressure hydrogen in flexible tanks for electricity, cooking gas, and pressurized mobility. Presented at FabFest; "Special Mention" award reviewed by MIT Prof. Neil Gershenfeld. |
+| ![2023 Dec — Floating Solar Hydrogen Research Facility Proposal](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Bali%20Floating%20H2%20Lab.png) | **d. 2023 Dec · Indonesia** <br/>*"Floating Solar Hydrogen Research Facility Proposal"* | A research-facility proposal for the mangroves of North Serangan Island, Denpasar, Bali. IoT and real-time dashboard prototyped with Eric Pan (Seeed Studio). Contributions from Prof. Ni Made Dwidiani, Prof. Alvaro Cassinelli, Pamela Pascual. |
+| ![2024 Mar — International Ocean Station Philippines](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Mind%20Museum.png) | **e. 2024 Mar · Philippines** <br/>*"International_Ocean_Station_Philippines"* | An architectural model of floating villages co-designed with approximately 100 participants from ten NGOs. The concept reframes the gaze of the International Space Station: instead of looking at Earth from above, coastal communities study and steward their local ocean. Acquired by the MIND Museum in Manila; supported by Alliance Française Manila; produced by Emerging Islands. |
+| ![2024 Sep — Floating Solar Hydrogen](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Test%20Device.png) | **f. 2024 Sep · Singapore** <br/>*"Floating Solar Hydrogen"* | A fully instrumented test device for *An Ocean City Imagined* at the ArtScience Museum. Custom floating chassis, custom PCB, sensor stack measuring every sub-system; tested in lab, on land, and on water. Supported by Saad Chinoy, Doruk Tan Ozturk, Li Congxiao, Mitalee Parikh, Kaitlyn Tan, Constance Gaume, ArtScience Museum, Huey Lin & Frederic Gaume, the Singapore Institute of Technology, and Conservatoire National des Arts et Métiers Paris. |
 
 The lineage is intentionally **design-thinking-led** and **co-creative**: each prototype was the simplest artefact that could test the next assumption, deployed where the consequences could be observed and measured.
 
----
-
-<a id="5-speculative-design-for-international-development"></a>
-## :crystal_ball: 5. Speculative Design for International Development
-
-**Speculative design** is a design practice that develops hypothetical, often critical, future-oriented proposals in order to explore and debate the social, ethical, and political implications of emerging technologies and socio-technical change, rather than to produce commercially finished products. Its purpose is to make possible futures tangible enough to be examined in the present.
-
-**International development** (also called *global development*) denotes both a condition and a field of practice concerned with differing levels of economic and human development across countries, and with deliberate efforts — by states, international organisations, and civil society — to promote economic growth, reduce poverty, and improve living conditions, especially in formerly colonised and economically disadvantaged regions. As an academic field, it studies the processes, institutions, and power relations that shape these uneven trajectories.
-
-This project sits at the intersection of the two: it uses the imaginative and debate-provoking devices of speculative design alongside the evidence-based methods of development practice. The objective is to make a prototype-grounded proposition that communities, researchers, and governments can examine and adapt.
 
 ---
 
-<a id="6-engineering-futures--and-the-bridge-to-impact-innovation"></a>
-## :rocket: 6. Engineering Futures — and the Bridge to Impact Innovation
+<a id="5-engineering-futures--Bridging-Fiction-and-Science"></a>
+## :crystal_ball: 5. Engineering Futures — From Fiction to Science
 
-**Engineering** is the discipline that applies scientific theories, mathematical methods, and empirical evidence to design, build, and analyse machines, structures, systems, and processes under constraints such as physical laws, safety, regulation, and cost. Contemporary engineering comprises specialised branches (civil, electrical, mechanical, chemical, software) sharing a common problem-solving orientation.
-
-**Futures studies** (or *futurology*) is the research-based, transdisciplinary field that systematically explores possible, probable, and preferable futures and the worldviews underlying them. **Strategic foresight**, a sub-discipline, refers to the systematic practice of exploring expected and alternative futures — through horizon scanning, trend analysis, and scenario building — to inform present-day strategy.
-
-### 6.1 Impact Innovation
-
-Sections 5 and 6 together motivate the methodology this project calls **Impact Innovation**:
-
-> **Impact Innovation = Arts × Sciences × Prototypes deployed in the real world**
-
-In practice this means:
-
-1. Begin with a speculative proposition, examined for its ethical and political implications, rather than only a market gap.
-2. Translate the proposition into engineering constraints, equations, materials, and costs.
-3. Build the simplest artefact that can confirm or disconfirm the proposition.
-4. Deploy it in a real context, with the community that will host it, and measure outcomes.
-5. Iterate in the open.
-
-This methodology produced the six prototypes in [Section 4](#4-past-prototypes), and the repository is structured to support it.
+This project operates at the intersection of engineering and futures thinking. Engineering contributes disciplined methods: modelling, constraint analysis, materials science, cost structures, safety standards, and empirical testing. Futures studies contributes structured imagination: the systematic exploration of possible and preferable worlds, the surfacing of assumptions, and the design of alternatives that challenge present trajectories. Together, they form a practice that is neither purely technical nor purely speculative, but generative — grounded in evidence while open to transformation.
+We call this approach Impact Innovation: the deliberate coupling of scientific rigour with imaginative co‑creation via co-creation, prototyping, testing, documenting. Rather than beginning solely with a market gap, we begin with real-world needs and speculative propositions about how these needs might be addressed differently — ethically, ecologically, and socially. That proposition is translated into engineering parameters, prototypes, with measurable criteria. Through iterative testing in the real world, Speculative Design becomes International Development.
 
 ---
 
-<a id="7-hypothetical-unit-the-10-kw-single-house-reference"></a>
-## :house_with_garden: 7. Hypothetical Unit: The 10 kW Single-House Reference
+<a id="6-hypothetical-unit-the-10-kw-single-house-reference"></a>
+## :house_with_garden: 6. Hypothetical Unit: The 10 kW Single-House Reference
 
-The December 2023 Indonesia proposal (Prototype **d** above) used approximately **10 kW** as a reference unit. This repository continues to use that as a canonical "single-unit" size, for three reasons:
+The December 2023 Indonesia design (Prototype **d** above) was  intended to be equipped with **10 kW** of solar panel capacity. This dimensions is a useful "single-unit" case study, for three reasons:
 
-- It corresponds, in many tropical contexts, to a generously sized single-house residential solar installation.
-- It is sized to provide useful energy autonomy for a family of four — lighting, refrigeration, modest cooking, mobile and computing devices, water pumping.
+- It corresponds, in many tropical contexts, to a generously sized single-family-house residential solar installation.
+- At this scale, it could provide useful energy autonomy for a family of four — heating, cooling, water pumping, lighting, cooking, transportation
 - It is small enough to be prototyped, transported, insured, and locally maintained by a cooperative, school, or small operator without requiring industrial-scale financing.
 
-The 10 kW unit serves as the **module of legibility**: a scale at which a community can understand what they own, what it does, and what it costs to operate.
+The 10 kW unit could serve as the **proof of viability**: a scale at which a community can understand what it does, what it costs to operate, and how it could be scaled.
+![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/a0631295a694b4837caef44c9143f26e6d31b275/Image/Seeed%20Studio%20Wiring.png)
+![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/a0631295a694b4837caef44c9143f26e6d31b275/Image/Seeed%20Studio%20Dashboard.png)
+
+Testing of IOT devices and real-time dashboard with Eric Pan (Seeed Studio) in Indonesia. 
 
 ---
 
-<a id="8-scalability"></a>
-## :arrow_up: 8. Scalability
+<a id="7-scalability"></a>
+## :arrow_up: 7. Scalability
 
-The platform is **tileable**. Multiple 10 kW units can be moored together; multiple clusters can be arrayed; and farms can be replicated across coastlines. This repository does not commit to a specific deployed power figure — that is a function of local demand, local ecology, and local policy. The deployment heuristics are:
+The platform is **tileable**. Multiple 10 kW units can be moored together; multiple clusters can be arrayed; and farms can be replicated across coastlines. This repository does not commit to a specific deployed power figure — that is a function of local demand, ecology and local policy. The deployment heuristics are:
 
 - **Solar exposure** — locations with high annual irradiance and predictable insolation, particularly tropical and subtropical coasts.
-- **Calm seas** — low-wave-height regions, with mitigation strategies for typhoon, hurricane, or tsunami exposure (e.g. detachment or shelter).
+- **Calm seas** — low-wave-height regions, low exposure to typhoon, hurricane, tornadoes and tsunami exposure.
 - **Adjacent population** — coastlines with large, growing population centres where existing grid reliability, internet, and freshwater are constrained.
 - **Demand for AI, data and connectivity** — places where digital services are scaling faster than the legacy grid can support, so the platform displaces fossil generation rather than competing with already-clean grids.
 
@@ -252,50 +234,50 @@ Where these conditions overlap is also where the case for **public ownership** (
 
 ---
 
-<a id="9-ownership--governance"></a>
-## :classical_building: 9. Ownership & Governance
+<a id="8-ownership--governance"></a>
+## :classical_building: 8. Ownership & Governance
 
 > [!NOTE]
 > Governance and ownership are presented here as design choices alongside the engineering. For an integrated infrastructure that delivers multiple essential services, the ownership structure affects long-term outcomes alongside the technical specification.
 
-### 9.1 Why broad ownership matters for integrated infrastructure
+### 8.1 Why broad ownership matters for integrated infrastructure
 
-The platform produces *electricity, fresh water, oxygen, food substrate, computation, and connectivity*. Each of these is a candidate **public-interest utility**. When several utilities are co-produced on a single asset, a broad ownership base reduces the concentration of decision-making authority over services that residents and institutions depend on, and improves long-term alignment with public outcomes.
+The platform produces *electricity, fresh water, brine, hydrogen, oxygen, computation, connectivity and marine biomass*. Each of these is a candidate **public-interest utility**. When several utilities are co-produced on a single asset, a broad ownership base reduces the concentration of decision-making authority over services that residents and institutions depend on, and improves long-term alignment with public outcomes.
 
-### 9.2 The host government as majority shareholder
+### 8.2 The host government as majority shareholder
 
 The reference governance pattern in this repository is:
 
-- The **host government** — municipal, regional/state, or national, depending on which has authority over the relevant assets (see [§E](#e-levels-of-government-and-partnership-patterns)) — holds a **majority (≥ 51%) controlling stake** in any operating entity.
-- A minority is held by **private operators / technical partners** who provide capital, engineering, and operations.
+- The **host government** — municipal, regional/state, or national, depending on which has authority over the relevant assets (see [§E](#e-levels-of-government-and-partnership-patterns)) — may hold a **majority (≥ 51%) controlling stake** in any operating entity.
+- A minority may be held by **private operators / technical partners** who provide capital, engineering, and operations.
 - A further minority may be held by **the workforce** (a worker-cooperative tranche) and by **community or civic trust** mechanisms.
-- The **operating charter** binds the entity to publish performance, environmental, and financial data on a public dashboard.
+- The **operating charter** binds the entity to publish performance: environmental, cultural, social and financial data on a public dashboard.
 
 #### Indicative ownership structure *(illustrative, not prescriptive)*
 
 | Stakeholder | Indicative share | Role |
 | --- | ---: | --- |
 | Host government (municipal / regional / national) | ~51% | Majority control, public-interest mandate |
-| Private operator(s) / technical partner(s) | ~30% | Capital, engineering, day-to-day operations |
-| Workforce cooperative tranche | ~10% | Long-term staff alignment and succession |
-| Community / civic trust | ~9% | Local accountability and dispute resolution |
+| Private operator(s) / technical partner(s) | ~20% | Capital, engineering, day-to-day operations |
+| Workforce cooperative tranche | ~15% | Long-term staff alignment and succession |
+| Community / civic trust | ~14% | Local accountability and dispute resolution |
 
-The exact percentages will vary by deployment. The structural intent is that no single shareholder can unilaterally redirect the public-interest mandate.
+The exact percentages may vary by deployment. The structural intent is that no single shareholder can unilaterally redirect the public-interest mandate.
 
-### 9.3 Continuity with established public-utility practice
+### 8.3 Continuity with established public-utility practice
 
-Water, public health, public education, and public security have, over the course of the 20th century, become widely accepted as essential public services in most jurisdictions. Access to data and computational services is becoming similarly foundational: it is, in many contexts, a precondition for self-education, participation in the economy, and the broader development of human capabilities. Treating AI-adjacent infrastructure as a candidate **utility** is consistent with this longer trajectory rather than a departure from it.
+Public security, access to water, health and education have become widely accepted as essential public services in most countries. Access to data and computational services is becoming similarly foundational: it is, in many contexts, a precondition for education, participation in the economy, and the broader development of human capabilities. Treating AI-adjacent infrastructure as a candidate **utility** is consistent with this longer trajectory rather than a departure from it.
 
-### 9.4 Broad utility access
+### 8.4 Broad utility access
 
-The design intent of this project is that AI and computation be **broadly accessible** — across industries, public institutions, and communities — rather than concentrated within a small number of operators. This framing draws on established theory and regulation around public utilities. Treating AI-adjacent infrastructure as a candidate **utility** is consistent with that longer trajectory rather than a departure from it.
+The design intent of this project is that AI and computation be **broadly accessible** — across industries, public institutions, and communities — rather than concentrated within a small number of operators. This framing draws on established theory and regulation around public utilities. Treating AI-adjacent infrastructure as a candidate **utility** is consistent with that longer trajectory.
 
 ---
 
 <a id="10-business-case"></a>
-## :moneybag: 10. Business Case
+## :moneybag: 9. Business Case
 
-A publicly-majority-owned Floating Solar Hydrogen Data Center can deliver value to multiple stakeholders simultaneously, because the parties that depend on the system for service quality also share ownership and oversight.
+A publicly-majority-owned Floating Solar Hydrogen Data Center may deliver value to multiple stakeholders simultaneously, because the parties that depend on the system for service quality also share ownership and oversight.
 
 #### Value to each party
 
@@ -344,11 +326,12 @@ A publicly-majority-owned Floating Solar Hydrogen Data Center can deliver value 
 - **Decommissioning bond** to ensure end-of-life site restoration.
 
 The case for the platform rests on **diversified service revenue combined with shared value**: the customers and the public are co-owners of the asset.
+![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/2cff95abd3bc5f7ee5c332e5c94821f3ef7240df/Image/Balon%20Balon%20Ijo%20Diagram.jpg)
 
 ---
 
 <a id="11-reporting--a-theory-of-change"></a>
-## :bar_chart: 11. Reporting — A Theory of Change
+## :bar_chart: 10. Reporting — A Theory of Change
 
 The project uses a Theory of Change framework to report outcomes **horizontally across time** and **vertically across four impact dimensions**:
 
@@ -359,30 +342,30 @@ The project uses a Theory of Change framework to report outcomes **horizontally 
 | **Social** | Open-hardware licence, public-majority charter | Train technicians, employ locally, publish dashboards | Skilled jobs; public access to compute, water, electricity | Reduced inequality of access to AI, water, electricity | Data, AI, and clean water available as utilities, similar to public health |
 | **Financial** | Co-investment by host government, operators, community | Build, operate, and meter the platform | Stable revenue from utilities and dividends to host government | Public reinvestment into health, education, ecological repair | A self-sustaining economic loop owned by the host |
 
-### 11.1 Why this ordering
+### 10.1 Why this ordering
 
-The four dimensions are listed in the sequence **Environmental → Cultural → Social → Financial** because:
+The four dimensions of impact are listed in the sequence **Environmental → Cultural → Social → Financial** because:
 
-- **The environment** is the substrate on which the other dimensions depend.
-- **Culture** structures the social fabric, and technology is part of culture.
-- **Society** is where technology is negotiated, regulated, and made meaningful.
-- **Finance** operates within social and ecological boundaries.
+- **The environment** is the substrate on which all other dimensions operate.
+- **Culture** structures the social fabric, from the collective to the individual.
+- **Society** organised society developed advanced technologies.
+- **Finance** is a social technology.
 
-This ordering keeps reporting from collapsing into a single financial indicator while still producing financial discipline.
+This ordering reminds us the reality and the order of prirority in which we operate.
 
 ---
 
 <a id="12-intellectual-property-and-the-energy-transition"></a>
-## :unlock: 12. Intellectual Property and the Energy Transition
+## :unlock: 11. Intellectual Property and the Energy Transition
 
 > [!NOTE]
 > Open-source licensing has multiple variants. **Permissive** licences allow derivatives to be released under any terms, including proprietary ones. **Reciprocal** (also called *copyleft*) licences require that derivatives be released under the same terms. The choice between them shapes long-term openness.
 
-### 12.1 Why distributed IP matters in the energy transition
+### 11.1 Why distributed IP matters in the energy transition
 
 The energy transition is a large reallocation of capital, infrastructure, and political authority. Distributing the underlying intellectual property across many local stakeholders — municipalities, cooperatives, universities, and communities — keeps the transition aligned with local needs and produces a more resilient innovation network than concentration into a small number of organisations.
 
-### 12.2 Why this is also good for innovation
+### 11.2 Why this is also good for innovation
 
 Distributing IP across many local actors:
 
@@ -396,9 +379,9 @@ A reciprocal hardware licence (CERN-OHL-S v2, see [§13](#13-collaboration-frame
 ---
 
 <a id="13-collaboration-framework"></a>
-## :handshake: 13. Collaboration Framework
+## :handshake: 12. Collaboration Framework
 
-### 13.1 The choice of licence: CERN-OHL-S v2
+### 12.1 The choice of licence: CERN-OHL-S v2
 
 This project is released under the **CERN Open Hardware Licence, Version 2 — Strongly Reciprocal (CERN-OHL-S v2)**.
 
@@ -415,11 +398,11 @@ The "**S**" stands for **Strongly Reciprocal**. In plain language:
 
 This licence ensures that modifications and derivative hardware remain available under the same reciprocal terms.
 
-### 13.2 Why we use this licence
+### 12.2 Why we use this licence
 
 If this design is developed further, the intent is that it continue to deliver public-interest services and ecosystem benefit (the upper-right quadrant of the impact diagram in [§3.3](#33-impact-axes)). A reciprocal licence supports a continuing cycle in which improvements made by any operator return to the shared design base.
 
-### 13.3 Collaboration norms
+### 12.3 Collaboration norms
 
 - **Credit upstream.** Every contributor and every prior prototype is named — see [§4](#4-past-prototypes) and [Acknowledgements](#acknowledgements).
 - **Engage local talent.** Forks that deploy in a new region are expected to work with local institutions and contributors.
@@ -585,7 +568,7 @@ Open hardware alone is not sufficient to ensure sustained openness. The combinat
 │
 ├── hardware/
 │   ├── structures/             ← floats, mooring, marine deployment
-│   ├── pv/                     ← solar generation assemblies, BoS
+│   ├── solar/                     ← solar generation assemblies, BoS
 │   ├── water/                  ← intake, purification, desalination
 │   ├── hydrogen/               ← electrolysis, low-pressure storage
 │   ├── compute/                ← ocean-cooled enclosures
@@ -637,14 +620,13 @@ Open hardware alone is not sufficient to ensure sustained openness. The combinat
 If you reference this project in academic, policy, or journalistic work, please cite the underpinning research:
 
 ```bibtex
-@techreport{Harada2026FloatingSolarHydrogen,
+@techreport{Harada2026FloatingSolarHydrogenDataCentre,
   author       = {Harada, Cesar},
-  title        = {Floating Solar Hydrogen Data Center: Integrated Coastal Infrastructure for AI, Water and Food Security},
+  title        = {Floating Solar Hydrogen Data Center},
   institution  = {Conservatoire National des Arts et M\'etiers (CNAM), Paris, France},
-  type         = {PhD candidate research paper},
   year         = {2026},
   month        = {February},
-  note         = {Supervised by Prof.\ Pierre L\'evy and Gilles Garel},
+  note         = {Supervised by Prof. Pierre Levy, Gilles Garel, Miles Pennington},
   url          = {https://github.com/<your-org>/floating-solar-hydrogen-data-center}
 }
 ```
@@ -658,13 +640,9 @@ When referring to a specific prototype, cite the prototype's folder under `proto
 
 This project is the cumulative product of many contributors. Without prejudice to anyone whose name is unintentionally missing:
 
-- **Academic supervision:** Prof. Pierre Lévy, Gilles Garel (CNAM, Paris).
-- **Partner institutions and organisations:** The Nature Conservancy; MakerBay; NEAR Foundation; Seeed Studio; Hong Kong Arts Centre; Emerging Islands collective; Alliance Française Manila; MIND Museum Manila; ArtScience Museum Singapore; Singapore Institute of Technology; Conservatoire National des Arts et Métiers Paris.
-- **Contributors, collaborators, and participants (A–D):** Abbie Jung, Abigail Wee, Adrian George, Adrian Lai, Agung Prianta, Ajeng Wulandari, Albino Marques, Alex Clay, Alex Sarte, Alvina Lim, Alvaro Cassinelli, Amber Chunzhi Yin, Ana Chacon, Andreas Kopp, Anne-Laure Herrezuelo, António Chanoca, Antonio Gordillo, Arka Kinari, Aurianne Ricquier, Bayden Russell, Captain Bobby, Carlos Tamayo, Charlie Pun, Chicky Bhavnani, Claire Chaikin-Bryan, Connor Wee, Constance Gaume, Cooby, Czyka, Daan Sonnemans, Darwin Cayetano, Dave Lim, David Loughran, Deborah Jung, Dione Goh Si Ping, Doruk Tan Ozturk.
-- **Contributors, collaborators, and participants (E–L):** Edric Nazareno, Elaine Enzo, Emma Lee, Eric Pan, Erica Keung, Etienne Gernez, Frederic Gaume, Franklin Chow, Gillian Goh, Grey Filastine, Haelyn Lim Ying, Ho Yew Kee, Honor Harger, Hong Vu, Huey Lin, Ian Saguan, Jacob Wilkinson, Jao San Pedro, Jawn Lim, Jeffrey Koh, Jodie Loi, Jose Alonso, Joshua Lau, Kaitlyn Tan, Kate Armstrong, Karma Wangchu, Kay Wong, Kevin Martens Wong, Kumar Tvesha Sanjay, Laura Marques Leal, Li Congxiao, Lim Jing, Louis Destombe, Louise Fortinez, Lucas Wee, Lucka, Lucy Gillian.
-- **Contributors, collaborators, and participants (M–R):** Majenta Strongheart, Mark Shan Chian Teo, Markus Leutwyler, Marv Abat, Melai Karaan, Mickey Galang, Miguel Vargas, Ming Lau, Mitalee Parikh, Mo Tse, Nadya Shaznay, Nasrin Fotohi, Neil Gershenfeld, Ng Keng Wei, Ni Made Dwidiani, Nishant Kidangan, Nicola Sebastian, Noe Fuentes, Norella Coronell, Pamela Pascual, Patricia Veloso, Pecier Paul Decierdo, Pieter Franken, Primy Jeils, Prince Dellosa, Rafi Abdullah, Ratna Mardiani Mulya, Regina M Sipos, Ryan Sim.
-- **Contributors, collaborators, and participants (S–Y):** Saad Chinoy, Sam Zarandin, Sammie Ng, Sherry Lassiter, Tan Jia Yue, Therese Tresvalles, Thomas Landrain, Tomas Diez, Tit Meng Lim, Treeyakorn Sangsuwan, Vengatesen Thiyagarajan, Vivian Lim, Xavier Leroux, Ye Seong Shin, Ying Xuan Chian.
-- **Communities** in Hong Kong, Bali, the Philippines, and Singapore who hosted and improved the prototypes.
+- **Academic supervision:** Prof. Pierre Lévy, Gilles Garel (CNAM, Paris), Miles Pennington (Tokyo University).
+- **Partner institutions:**, organisations & Communities: Conservatoire National des Arts et Métiers Paris; Tokyo University DLX; MakerBay; Seeed Studio; Emerging Islands; ArtScience Museum Singapore; Singapore Institute of Technology; The University of Hong Kong; The Swire Institute of Marine Science; The Nature Conservancy; NEAR Foundation; Hong Kong Arts Centre; Emerging Islands collective; Alliance Française Manila; MIND Museum Manila, The Kristang Community of Singapore.
+- **Contributors:** Abbie Jung, Abigail Wee, Adrian George, Adrian Lai, Agung Prianta, Ajeng Wulandari, Albino Marques, Alex Clay, Alex Sarte, Alvina Lim, Alvaro Cassinelli, Amber Chunzhi Yin, Ana Chacon, Andreas Kopp, Anne-Laure Herrezuelo, António Chanoca, Antonio Gordillo, Arka Kinari, Aurianne Ricquier, Bayden Russell, Captain Bobby, Carlos Tamayo, Charlie Pun, Chicky Bhavnani, Claire Chaikin-Bryan, Connor Wee, Constance Gaume, Cooby, Czyka, Daan Sonnemans, Darwin Cayetano, Dave Lim, David Loughran, Deborah Jung, Dione Goh Si Ping, Doruk Tan Ozturk, Edric Nazareno, Elaine Enzo, Emma Lee, Eric Pan, Erica Keung, Etienne Gernez, Frederic Gaume, Franklin Chow, Gillian Goh, Grey Filastine, Haelyn Lim Ying, Ho Yew Kee, Honor Harger, Hong Vu, Huey Lin, Ian Saguan, Jacob Wilkinson, Jao San Pedro, Jawn Lim, Jeffrey TK Koh Valino, Jodie Loi, Jose Alonso, Joshua Lau, Kaitlyn Tan, Kate Armstrong, Karma Wangchu, Kay Wong, Kevin Martens Wong, Kumar Tvesha Sanjay, Laura Marques Leal, Li Congxiao, Lim Jing, Louis Destombe, Louise Fortinez, Lucas Wee, Lucka, Lucy Gillian, Majenta Strongheart, Mark Shan Chian Teo, Markus Leutwyler, Marv Abat, Melai Karaan, Mickey Galang, Miguel Vargas, Ming Lau, Mitalee Parikh, Mo Tse, Nadya Shaznay, Nasrin Fotohi, Neil Gershenfeld, Ng Keng Wei, Ni Made Dwidiani, Nishant Kidangan, Nicola Sebastian, Noe Fuentes, Norella Coronell, Pamela Pascual, Patricia Veloso, Pecier Paul Decierdo, Pieter Franken, Primy Jeils, Prince Dellosa, Rafi Abdullah, Ratna Mardiani Mulya, Regina M Sipos, Ryan Sim,  Saad Chinoy, Sam Zarandin, Sammie Ng, Sherry Lassiter, Tan Jia Yue, Therese Tresvalles, Thomas Landrain, Tomas Diez, Tit Meng Lim, Treeyakorn Sangsuwan, Vengatesen Thiyagarajan, Vivian Lim, Xavier Leroux, Ye Seong Shin, Ying Xuan Chian.
 
 ---
 
