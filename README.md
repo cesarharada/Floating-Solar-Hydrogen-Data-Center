@@ -169,7 +169,7 @@ quadrantChart
     x-axis Environmental Degradation --> Environmental Regeneration
     y-axis Private Profit --> Collective Benefit
     Floating Solar Hydrogen Data Center: [0.75, 0.75] radius: 25, color: #00ff33
-    Space Based data Center: [0.25, 0.25] radius: 25, color: #ff3300
+    Space Based Data Center: [0.25, 0.25] radius: 25, color: #ff3300
 ```
 
 The design target is the upper-right quadrant: economically sustainable operations combined with measurable environmental benefit. This dual objective is what the rest of the document is structured to support.
@@ -623,7 +623,7 @@ If you reference this project in academic, policy, or journalistic work, please 
 @techreport{Harada2026FloatingSolarHydrogenDataCentre,
   author       = {Harada, Cesar},
   title        = {Floating Solar Hydrogen Data Center},
-  institution  = {Conservatoire National des Arts et Metiers (CNAM), Paris, France},
+  institution  = {Conservatoire National des Arts et Metiers, Paris; University of Tokyo},
   year         = {2026},
   month        = {February},
   note         = {Supervised by Prof. Pierre Levy, Gilles Garel, Miles Pennington},
