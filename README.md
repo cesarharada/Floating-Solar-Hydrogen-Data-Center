@@ -13,8 +13,8 @@
 [![License: CERN-OHL-S v2](https://img.shields.io/badge/Hardware%20License-CERN--OHL--S%20v2-1f6feb.svg)](./LICENSE)
 [![Docs: GFM](https://img.shields.io/badge/Docs-GitHub%20Flavored%20Markdown-24292f.svg)](https://github.github.com/gfm/)
 [![Status: Prototyped+ Speculative](https://img.shields.io/badge/Status-Speculative%20%2B%20Prototyped-2da44e.svg)](#4-past-prototypes)
-[![Governance: Public-majority](https://img.shields.io/badge/Governance-Public--majority-8250df.svg)](#9-ownership--governance)
-[![Stewardship: Reciprocal-open](https://img.shields.io/badge/Stewardship-Reciprocal--open-0a7f8c.svg)](#13-collaboration-framework)
+[![Governance: Public-majority](https://img.shields.io/badge/Governance-Public--majority-8250df.svg)](#8-ownership--governance)
+[![Stewardship: Reciprocal-open](https://img.shields.io/badge/Stewardship-Reciprocal--open-0a7f8c.svg)](#12-collaboration-framework)
 
 <sub>An open-hardware proposal for integrated coastal civic infrastructure.</sub>
 
@@ -42,11 +42,11 @@ The Floating Solar Hydrogen Data Center is a coastal infrastructure platform tha
 | Reader | Start here | Then read |
 | --- | --- | --- |
 | **Engineer** | [§1 Concept](#1-concept) → [§B TRL per subsystem](#b-technology-readiness-level-per-subsystem) | [§C Risks and open questions](#c-risks-limitations-and-open-questions), [§D Safety](#d-safety), [Repository map](#repository-map) |
-| **Designer / researcher** | [§4 Past prototypes](#4-past-prototypes) → [§§5–6 Methodology](#5-speculative-design-for-international-development) | [§3 Services and impact](#3-applications-and-impact), [§A The Layers](#The-Layers) |
-| **Policymaker** | [§9 Governance](#9-ownership--governance) → [§F Policy mapping](#f-mapping-to-existing-policy-frameworks) | [§E Levels of government](#e-levels-of-government-and-partnership-patterns), [§11 Theory of change](#11-reporting--a-theory-of-change) |
-| **Financier / operator** | [§10 Business case](#10-business-case) → [§C Risks](#c-risks-limitations-and-open-questions) | [§9.2 Indicative ownership structure](#92-the-host-government-as-majority-shareholder), [§B TRL](#b-technology-readiness-level-per-subsystem) |
-| **Government partner** | [§9 Governance](#9-ownership--governance) → [§E Levels of government](#e-levels-of-government-and-partnership-patterns) | [§F Policy mapping](#f-mapping-to-existing-policy-frameworks), [§G Stewardship safeguards](#g-stewardship-safeguards) |
-| **Contributor** | [How to contribute](#how-to-contribute) | [§13 License](#13-collaboration-framework), [Repository map](#repository-map) |
+| **Designer / researcher** | [§4 Past prototypes](#4-past-prototypes) → [§§5–6 Methodology](#5-engineering-futures--from-fiction-to-science) | [§3 Services and impact](#3-applications-and-impact), [§A The Layers](#a-the-layers) |
+| **Policymaker** | [§8 Governance](#8-ownership--governance) → [§F Policy mapping](#f-mapping-to-existing-policy-frameworks) | [§E Levels of government](#e-levels-of-government-and-partnership-patterns), [§10 Theory of change](#10-reporting--a-theory-of-change) |
+| **Financier / operator** | [§9 Business case](#9-business-case) → [§C Risks](#c-risks-limitations-and-open-questions) | [§8.2 Indicative ownership structure](#82-the-host-government-as-majority-shareholder), [§B TRL](#b-technology-readiness-level-per-subsystem) |
+| **Government partner** | [§8 Governance](#8-ownership--governance) → [§E Levels of government](#e-levels-of-government-and-partnership-patterns) | [§F Policy mapping](#f-mapping-to-existing-policy-frameworks), [§G Stewardship safeguards](#g-stewardship-safeguards) |
+| **Contributor** | [How to contribute](#how-to-contribute) | [§12 License](#12-collaboration-framework), [Repository map](#repository-map) |
 
 ---
 
@@ -59,18 +59,18 @@ The Floating Solar Hydrogen Data Center is a coastal infrastructure platform tha
 2. [Designing from First Principles](#2-designing-from-first-principles)
 3. [Applications and Impact](#3-applications-and-impact)
 4. [Past Prototypes](#4-past-prototypes)
-5. [Engineering Futures — and the Bridge to Impact Innovation](#5-engineering-futures--Bridging-Fiction-and-Science)
+5. [Engineering Futures — and the Bridge to Impact Innovation](#5-engineering-futures--from-fiction-to-science)
 6. [Hypothetical Unit: The 10 kW Single-House Reference](#6-hypothetical-unit-the-10-kw-single-house-reference)
-7. [Scalability](#8-scalability)
-8. [Ownership & Governance](#9-ownership--governance)
-9. [Business Case](#10-business-case)
-10. [Reporting — A Theory of Change](#11-reporting--a-theory-of-change)
-11. [Intellectual Property and the Energy Transition](#12-intellectual-property-and-the-energy-transition)
-12. [Collaboration Framework](#13-collaboration-framework)
+7. [Scalability](#7-scalability)
+8. [Ownership & Governance](#8-ownership--governance)
+9. [Business Case](#9-business-case)
+10. [Reporting — A Theory of Change](#10-reporting--a-theory-of-change)
+11. [Intellectual Property and the Energy Transition](#11-intellectual-property-and-the-energy-transition)
+12. [Collaboration Framework](#12-collaboration-framework)
 
 **Supplementary sections** *(for engineers, financiers, policymakers, and governments)*:
 
-- A. [The Layers](#The-Layers)
+- A. [The Layers](#a-the-layers)
 - B. [Technology Readiness Level per Subsystem](#b-technology-readiness-level-per-subsystem)
 - C. [Risks, Limitations and Open Questions](#c-risks-limitations-and-open-questions)
 - D. [Safety](#d-safety)
@@ -195,7 +195,7 @@ The lineage is intentionally **design-thinking-led** and **co-creative**: each p
 
 ---
 
-<a id="5-engineering-futures--Bridging-Fiction-and-Science"></a>
+<a id="5-engineering-futures--from-fiction-to-science"></a>
 ## :crystal_ball: 5. Engineering Futures — From Fiction to Science
 
 This project operates at the intersection of engineering and futures thinking. Engineering contributes disciplined methods: modelling, constraint analysis, materials science, cost structures, safety standards, and empirical testing. Futures studies contributes structured imagination: the systematic exploration of possible and preferable worlds, the surfacing of assumptions, and the design of alternatives that challenge present trajectories. Together, they form a practice that is neither purely technical nor purely speculative, but generative — grounded in evidence while open to transformation.
@@ -216,7 +216,7 @@ The 10 kW unit could serve as the **proof of viability**: a scale at which a com
 ![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/a0631295a694b4837caef44c9143f26e6d31b275/Image/Seeed%20Studio%20Wiring.png)
 ![Image](https://github.com/cesarharada/Floating-Solar-Hydrogen-Data-Center/blob/a0631295a694b4837caef44c9143f26e6d31b275/Image/Seeed%20Studio%20Dashboard.png)
 
-Testing of IOT devices and real-time dashboard with Eric Pan (Seeed Studio) in Indonesia. 
+Testing of IOT devices and real-time dashboard with Eric Pan in Indonesia. https://www.seeedstudio.com/
 
 ---
 
@@ -230,7 +230,7 @@ The platform is **tileable**. Multiple 10 kW units can be moored together; multi
 - **Adjacent population** — coastlines with large, growing population centres where existing grid reliability, internet, and freshwater are constrained.
 - **Demand for AI, data and connectivity** — places where digital services are scaling faster than the legacy grid can support, so the platform displaces fossil generation rather than competing with already-clean grids.
 
-Where these conditions overlap is also where the case for **public ownership** ([§9](#9-ownership--governance)) is strongest.
+Where these conditions overlap is also where the case for **public ownership** ([§8](#8-ownership--governance)) is strongest.
 
 ---
 
@@ -274,7 +274,7 @@ The design intent of this project is that AI and computation be **broadly access
 
 ---
 
-<a id="10-business-case"></a>
+<a id="9-business-case"></a>
 ## :moneybag: 9. Business Case
 
 A publicly-majority-owned Floating Solar Hydrogen Data Center may deliver value to multiple stakeholders simultaneously, because the parties that depend on the system for service quality also share ownership and oversight.
@@ -330,7 +330,7 @@ The case for the platform rests on **diversified service revenue combined with s
 
 ---
 
-<a id="11-reporting--a-theory-of-change"></a>
+<a id="10-reporting--a-theory-of-change"></a>
 ## :bar_chart: 10. Reporting — A Theory of Change
 
 The project uses a Theory of Change framework to report outcomes **horizontally across time** and **vertically across four impact dimensions**:
@@ -355,7 +355,7 @@ This ordering reminds us the reality and the order of prirority in which we oper
 
 ---
 
-<a id="12-intellectual-property-and-the-energy-transition"></a>
+<a id="11-intellectual-property-and-the-energy-transition"></a>
 ## :unlock: 11. Intellectual Property and the Energy Transition
 
 > [!NOTE]
@@ -374,11 +374,11 @@ Distributing IP across many local actors:
 - **Builds resilience.** If one node fails or pauses, the rest of the network continues the design lineage.
 - **Reduces single-actor capture risk.** No single legal entity can withdraw the design from public availability.
 
-A reciprocal hardware licence (CERN-OHL-S v2, see [§13](#13-collaboration-framework)) combined with a public-majority governance model ([§9](#9-ownership--governance)) is the structural basis for sustained openness.
+A reciprocal hardware licence (CERN-OHL-S v2, see [§12](#12-collaboration-framework)) combined with a public-majority governance model ([§8](#8-ownership--governance)) is the structural basis for sustained openness.
 
 ---
 
-<a id="13-collaboration-framework"></a>
+<a id="12-collaboration-framework"></a>
 ## :handshake: 12. Collaboration Framework
 
 ### 12.1 The choice of licence: CERN-OHL-S v2
@@ -417,19 +417,19 @@ These sections do not replace the thirteen-section structure above. They exist s
 
 ---
 
-<a id="The-Layers"></a>
+<a id="a-the-layers"></a>
 ## :building_construction: A. The Layers
 
 This repository is structured as a stack with five interlocking layers. Each layer is part of the design.
 
 | Layer | What it covers |
 | --- | --- |
-| **Intellectual Property** | Open documentation, reciprocal licensing under CERN-OHL-S v2, contribution rules ([§§12–13](#12-intellectual-property-and-the-energy-transition)). |
+| **Intellectual Property** | Open documentation, reciprocal licensing under CERN-OHL-S v2, contribution rules ([§§11–12](#11-intellectual-property-and-the-energy-transition)). |
 | **Hardware** | Floating structures, photovoltaic assemblies, water-treatment modules, electrolyzers, low-pressure storage, ocean-cooled compute enclosures, offshore communications, environmental sensors. |
 | **Software** | Embedded control, telemetry, dashboards, predictive maintenance, environmental monitoring, simulation and decision-support, public reporting interfaces. |
 | **Operations** | Siting, deployment, maintenance, safety, marine permitting, environmental stewardship, community integration, decommissioning. |
 | **Finance** | Capital structure, revenue allocation, dividend rules |
-| **Governance** | Ownership structure, voting rights, public-interest mandate, accountability and benefit-sharing rules ([§9](#9-ownership--governance)). |
+| **Governance** | Ownership structure, voting rights, public-interest mandate, accountability and benefit-sharing rules ([§8](#8-ownership--governance)). |
 
 ---
 
@@ -504,7 +504,7 @@ The `build-guide/safety/` directory tracks these in detail. This README does not
 | Harbour and shipping lanes | National maritime authority and port authority | Navigation safety review |
 | Planning and zoning | Municipal | Public consultation and siting |
 
-The reference governance pattern in [§9](#9-ownership--governance) therefore uses "**host government**" — whichever level (municipal, regional, or national) is the natural locus of public-interest authority for the specific deployment. In federal systems, this is typically a coalition.
+The reference governance pattern in [§8](#8-ownership--governance) therefore uses "**host government**" — whichever level (municipal, regional, or national) is the natural locus of public-interest authority for the specific deployment. In federal systems, this is typically a coalition.
 
 ---
 
@@ -603,7 +603,7 @@ Open hardware alone is not sufficient to ensure sustained openness. The combinat
 <a id="how-to-contribute"></a>
 ## :raised_hands: How to Contribute
 
-1. Read [§9 (Governance)](#9-ownership--governance), [§12 (IP)](#12-intellectual-property-and-the-energy-transition), and [§13 (Licence)](#13-collaboration-framework) before reading the hardware sections. Contribution norms are part of the design.
+1. Read [§8 (Governance)](#8-ownership--governance), [§11 (IP)](#11-intellectual-property-and-the-energy-transition), and [§12 (Licence)](#12-collaboration-framework) before reading the hardware sections. Contribution norms are part of the design.
 2. Open an [issue](../../issues) describing what you want to change, with a one-line summary of the *intent* and a paragraph on the *expected consequence*.
 3. Fork, branch, and submit a pull request. Reference the issue.
 4. Where the contribution touches hardware, include updated CAD / BOM / diagrams. Where it touches software, include tests.
@@ -623,7 +623,7 @@ If you reference this project in academic, policy, or journalistic work, please 
 @techreport{Harada2026FloatingSolarHydrogenDataCentre,
   author       = {Harada, Cesar},
   title        = {Floating Solar Hydrogen Data Center},
-  institution  = {Conservatoire National des Arts et M\'etiers (CNAM), Paris, France},
+  institution  = {Conservatoire National des Arts et Metiers (CNAM), Paris, France},
   year         = {2026},
   month        = {February},
   note         = {Supervised by Prof. Pierre Levy, Gilles Garel, Miles Pennington},
@@ -641,8 +641,8 @@ When referring to a specific prototype, cite the prototype's folder under `proto
 This project is the cumulative product of many contributors. Without prejudice to anyone whose name is unintentionally missing:
 
 - **Academic supervision:** Prof. Pierre Lévy, Gilles Garel (CNAM, Paris), Miles Pennington (Tokyo University).
-- **Partner institutions:**, organisations & Communities: Conservatoire National des Arts et Métiers Paris; Tokyo University DLX; MakerBay; Seeed Studio; Emerging Islands; ArtScience Museum Singapore; Singapore Institute of Technology; The University of Hong Kong; The Swire Institute of Marine Science; The Nature Conservancy; NEAR Foundation; Hong Kong Arts Centre; Emerging Islands collective; Alliance Française Manila; MIND Museum Manila, The Kristang Community of Singapore.
-- **Contributors:** Abbie Jung, Abigail Wee, Adrian George, Adrian Lai, Agung Prianta, Ajeng Wulandari, Albino Marques, Alex Clay, Alex Sarte, Alvina Lim, Alvaro Cassinelli, Amber Chunzhi Yin, Ana Chacon, Andreas Kopp, Anne-Laure Herrezuelo, António Chanoca, Antonio Gordillo, Arka Kinari, Aurianne Ricquier, Bayden Russell, Captain Bobby, Carlos Tamayo, Charlie Pun, Chicky Bhavnani, Claire Chaikin-Bryan, Connor Wee, Constance Gaume, Cooby, Czyka, Daan Sonnemans, Darwin Cayetano, Dave Lim, David Loughran, Deborah Jung, Dione Goh Si Ping, Doruk Tan Ozturk, Edric Nazareno, Elaine Enzo, Emma Lee, Eric Pan, Erica Keung, Etienne Gernez, Frederic Gaume, Franklin Chow, Gillian Goh, Grey Filastine, Haelyn Lim Ying, Ho Yew Kee, Honor Harger, Hong Vu, Huey Lin, Ian Saguan, Jacob Wilkinson, Jao San Pedro, Jawn Lim, Jeffrey TK Koh Valino, Jodie Loi, Jose Alonso, Joshua Lau, Kaitlyn Tan, Kate Armstrong, Karma Wangchu, Kay Wong, Kevin Martens Wong, Kumar Tvesha Sanjay, Laura Marques Leal, Li Congxiao, Lim Jing, Louis Destombe, Louise Fortinez, Lucas Wee, Lucka, Lucy Gillian, Majenta Strongheart, Mark Shan Chian Teo, Markus Leutwyler, Marv Abat, Melai Karaan, Mickey Galang, Miguel Vargas, Ming Lau, Mitalee Parikh, Mo Tse, Nadya Shaznay, Nasrin Fotohi, Neil Gershenfeld, Ng Keng Wei, Ni Made Dwidiani, Nishant Kidangan, Nicola Sebastian, Noe Fuentes, Norella Coronell, Pamela Pascual, Patricia Veloso, Pecier Paul Decierdo, Pieter Franken, Primy Jeils, Prince Dellosa, Rafi Abdullah, Ratna Mardiani Mulya, Regina M Sipos, Ryan Sim,  Saad Chinoy, Sam Zarandin, Sammie Ng, Sherry Lassiter, Tan Jia Yue, Therese Tresvalles, Thomas Landrain, Tomas Diez, Tit Meng Lim, Treeyakorn Sangsuwan, Vengatesen Thiyagarajan, Vivian Lim, Xavier Leroux, Ye Seong Shin, Ying Xuan Chian.
+- **Partner institutions:**, organisations & Communities: Conservatoire National des Arts et Métiers Paris; Tokyo University DLX; MakerBay; Seeed Studio; Emerging Islands; ArtScience Museum Singapore; Singapore Institute of Technology; The University of Hong Kong; The Swire Institute of Marine Science; The Nature Conservancy; NEAR Foundation; Hong Kong Arts Centre; Emerging Islands collective; Alliance Française Manila; MIND Museum Manila, The Kristang Community of Singapore.
+- **Contributors:** Abbie Jung, Abigail Wee, Adrian George, Adrian Lai, Agung Prianta, Ajeng Wulandari, Albino Marques, Alex Clay, Alex Sarte, Alvina Lim, Alvaro Cassinelli, Amber Chunzhi Yin, Ana Chacon, Andreas Kopp, Anne-Laure Herrezuelo, António Chanoca, Antonio Gordillo, Arka Kinari, Aurianne Ricquier, Bayden Russell, Captain Bobby, Carlos Tamayo, Charlie Pun, Chicky Bhavnani, Claire Chaikin-Bryan, Connor Wee, Constance Gaume, Cooby, Czyka, Daan Sonnemans, Darwin Cayetano, Dave Lim, David Loughran, Deborah Jung, Dione Goh Si Ping, Doruk Tan Ozturk, Edric Nazareno, Elaine Enzo, Emma Lee, Eric Pan, Erica Keung, Etienne Gernez, Frederic Gaume, Franklin Chow, Gillian Goh, Grey Filastine, Haelyn Lim Ying, Ho Yew Kee, Honor Harger, Hong Vu, Huey Lin, Ian Saguan, Jacob Wilkinson, Jao San Pedro, Jawn Lim, Jeffrey TK Koh Valino, Jodie Loi, Jose Alonso, Joshua Lau, Kaitlyn Tan, Kate Armstrong, Karma Wangchu, Kay Wong, Kevin Martens Wong, Kumar Tvesha Sanjay, Laura Marques Leal, Li Congxiao, Lim Jing, Louis Destombe, Louise Fortinez, Lucas Wee, Lucka, Lucy Gillian, Majenta Strongheart, Mark Shan Chian Teo, Markus Leutwyler, Marv Abat, Melai Karaan, Mickey Galang, Miguel Vargas, Ming Lau, Mitalee Parikh, Mo Tse, Nadya Shaznay, Nasrin Fotohi, Neil Gershenfeld, Ng Keng Wei, Ni Made Dwidiani, Nishant Kidangan, Nicola Sebastian, Noe Fuentes, Norella Coronell, Pamela Pascual, Patricia Veloso, Pecier Paul Decierdo, Pieter Franken, Primy Jeils, Prince Dellosa, Rafi Abdullah, Ratna Mardiani Mulya, Regina M Sipos, Ryan Sim,  Saad Chinoy, Sam Zarandin, Sammie Ng, Sherry Lassiter, Tan Jia Yue, Therese Tresvalles, Thomas Landrain, Tomas Diez, Tit Meng Lim, Treeyakorn Sangsuwan, Vengatesen Thiyagarajan, Vivian Lim, Xavier Leroux, Ye Seong Shin, Ying Xuan Chian.
 
 ---
 
