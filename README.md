@@ -621,7 +621,7 @@ If you reference this project in academic, policy, or journalistic work, please 
 
 ```bibtex
 @techreport{Harada2026FloatingSolarHydrogenDataCentre,
-  author       = {Harada, Cesar},
+  author       = {Harada, Cesar},{Cassinelli, Álvaro}, {Pascual, Pamela}, {Klebanov, Yuri}, {Trucchia, Federico},
   title        = {Floating Solar Hydrogen Data Center},
   institution  = {Conservatoire National des Arts et Metiers, Paris; University of Tokyo},
   year         = {2026},
