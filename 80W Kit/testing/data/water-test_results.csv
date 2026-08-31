@@ -1,0 +1,5 @@
+time_taken_min,hydrogen_ml,hydrogen_ml_per_hour,oxygen_ml,oxygen_ml_per_hour,voltage_electrolyzer_start_v,voltage_solar_start_v,voltage_electrolyzer_end_v,voltage_solar_end_v,solar_illuminance_start_lux,solar_illuminance_end_lux
+10,0,0,750,4500,3.63,11.5,3.63,11.7,22400,92000
+10,450,2700,700,4200,3.63,11.7,3.63,11.7,114000,105000
+14.55,800,3299,800,3299,3.63,11.7,3.63,11.6,73000,119000
+18.32,800,2620,800,2620,3.63,11.6,3.63,11.7,107000,114000

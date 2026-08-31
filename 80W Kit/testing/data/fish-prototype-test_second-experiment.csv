@@ -1,0 +1,4 @@
+solar_current_a,electrolyser_current_a,solar_voltage_v,electrolyser_voltage_v,light_intensity_lx,temperature_c
+0.15,15.04,4,11.54,-2,28.27
+0.18,14.87,4,11.62,-2,28.35
+0.17,14.76,4,11.44,-2,28.45
